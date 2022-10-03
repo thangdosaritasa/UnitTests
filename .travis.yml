@@ -1,3 +1,5 @@
+os: osx
+osx_image: xcode13.4
 language: objective-c
 xcode_project: UnitTest.xcodeproj # path to your xcodeproj folder
 xcode_scheme: UnitTest
