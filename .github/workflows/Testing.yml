@@ -12,4 +12,4 @@ jobs:
       - name: Force XCode 13.4
         run: sudo xcode-select -switch /Applications/Xcode.app
       - name: Testing iOS app
-        run: exec ./.github/scripts/test_app.sh
+        run: exec ./.github/scripts2/test_app.sh
