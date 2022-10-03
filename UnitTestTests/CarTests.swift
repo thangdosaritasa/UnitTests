@@ -44,7 +44,7 @@ final class CarTests: XCTestCase {
         //2 start jeep
         jeep.start(minutes: minutes)
         //Test it
-        XCTAssert(honda.miles > jeep.miles)
+        XCTAssert(honda.miles < jeep.miles)
     }
 
     func testExample() throws {
