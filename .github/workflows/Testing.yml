@@ -1,0 +1,15 @@
+name: Testing
+on:
+  pull_request:
+    branches: [main]
+jobs:
+  test:
+    name: Testing Swift Package and iOS app
+    runs-on: macOS-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v1
+      - name: Force XCode 13.4
+        run: sudo xcode-select -switch /Applications/Xcode.app
+      - name: Testing iOS app
+        run: exec ./.github/scripts/test_app.sh
